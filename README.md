@@ -1,23 +1,27 @@
 # The Houseplant Out-of-Office
 
 [![make.fun](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
-[![make.fun rank](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/konzlodon74-dot/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/rank.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
-[![make.fun reward](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/konzlodon74-dot/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/reward.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
+[![rank](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/konzlodon74-dot/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/rank.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
+[![reward](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/konzlodon74-dot/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/reward.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
 
-Entry for the [make.fun bounty "The Houseplant Out-of-Office"](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047): write the funniest out-of-office auto-reply a houseplant would send, 120 characters or fewer.
+An entry for [The Houseplant Out-of-Office](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047) on make.fun.
 
 ## The line
 
-> Out of office: I'm the fern. No water since March. If I reply, it's a miracle. If I don't, I've composted myself.
+> Out of office: I'm the fern by the window, unwatered since March. Your email has been composted. — The Plant
 
-113 characters. The fern by the window has been ignored since March; its reply is a miracle, its silence is compost.
+108 characters — one line, inside the 120-character gate.
 
-## Run
+## How it works
+
+`main.py` writes the single out-of-office line to `/output/entry.txt`,
+validating the gate first: one line, 1–120 characters, not only
+whitespace.
 
 ```sh
 python3 main.py
 ```
 
-Prints exactly that one line, deterministically. When run inside the make.fun
-sandbox it also writes the same text to `/output/entry.txt`, where the gate
-scorer reads it. Python 3 standard library only, no dependencies.
+## License
+
+MIT — see [LICENSE](LICENSE).
